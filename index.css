@@ -80,7 +80,7 @@ header {
 }
 header .logo {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -280,7 +280,16 @@ header .icons i:hover {
 }
 
 .about .row2 .skills .progress:nth-child(4) .bar span {
+  width: 80%;
+}
+.about .row2 .skills .progress:nth-child(5) .bar span {
   width: 70%;
+}
+.about .row2 .skills .progress:nth-child(6) .bar span {
+  width: 90%;
+}
+.about .row2 .skills .progress:nth-child(7) .bar span {
+  width: 90%;
 }
 .about .row2 .boxContainer {
   flex: 1 1 40rem;
@@ -400,7 +409,14 @@ header .icons i:hover {
 /* Experience Section End */
 
 /* Contact Section Start */
-.contact .icons {
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.icons  {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -438,12 +454,17 @@ header .icons i:hover {
   font-size: 1.7rem;
   color: #555;
 }
-
-.contact .row {
+.contact {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .contact .row form {
   flex: 1 1 55rem;
   box-shadow: var(--box_shadow);
@@ -476,7 +497,8 @@ header .icons i:hover {
   border: 1rem solid #000;
   border-radius: 0.5rem;
   flex: 1 1 25rem;
-}
+} 
+
 /* Contact Section end */
 
 /* Theme Toggle */
@@ -560,4 +582,14 @@ header .icons i:hover {
   header {
     width: 100%;
   }
+
 }
+
+@media (max-width:768px ) {
+    .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+}
+
